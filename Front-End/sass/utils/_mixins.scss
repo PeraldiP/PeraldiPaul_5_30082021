@@ -1,0 +1,16 @@
+@mixin flexbox-center($disposition:row){
+    display: flex;
+    flex-direction: $disposition;
+    justify-content: center;
+    align-items: center;  
+}
+
+@mixin desktop($largeur-media:950px) {
+    @media  screen and (min-width : $largeur-media){
+        @content;
+    }
+}
+
+@mixin shadow ($portee-ombre:5px){
+    box-shadow: 0px 5px $portee-ombre darken($color-background,30);
+}
