@@ -1,0 +1,41 @@
+.one-product{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-weight: 700;
+        text-decoration: underline ;
+        font-size: 3em;
+    }
+    &__image{
+        height: 250px;
+        width: 30%;
+    }
+    &__description{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px
+    }
+    &__text{
+        width: 60%;
+        font-size: 1.3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    span, label{
+        text-decoration: underline;
+    }
+    &__add-cart{
+        width: 250px;
+        height: 30px;
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+}
+
+#product--one{
+    background-color: #f2f2f2;
+    padding: 20px 30px 20px 30px;
+}

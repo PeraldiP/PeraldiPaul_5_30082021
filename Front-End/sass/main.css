@@ -163,4 +163,52 @@ footer h2 {
   align-items: center;
   justify-content: center;
 }
+
+.one-product {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one-product h2 {
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 3em;
+}
+
+.one-product__image {
+  height: 250px;
+  width: 30%;
+}
+
+.one-product__description {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.one-product__text {
+  width: 60%;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.one-product span, .one-product label {
+  text-decoration: underline;
+}
+
+.one-product__add-cart {
+  width: 250px;
+  height: 30px;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+#product--one {
+  background-color: #f2f2f2;
+  padding: 20px 30px 20px 30px;
+}
 /*# sourceMappingURL=main.css.map */
