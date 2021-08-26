@@ -3,8 +3,21 @@
  */
 
  function addFavorites(articleId){
+    let flag = 0;
     let listFavorites = getFavorites();
-    listFavorites.push(articleId);
+    if (listFavorites.length == 0){
+        listFavorites.push(articleId);
+    }
+    else{
+        for (let oneFavorite of listFavorites){
+            if(oneFavorite == articleId){
+                flag = 1;
+            }
+        }
+        if(flag==0){
+            listFavorites.push(articleId); 
+        }
+    }  
     saveFavorites(listFavorites);
 }
 

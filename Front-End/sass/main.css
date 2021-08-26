@@ -211,4 +211,20 @@ footer h2 {
   background-color: #f2f2f2;
   padding: 20px 30px 20px 30px;
 }
+
+.cart-product {
+  display: flex;
+  flex-direction: rox;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.cart-product img {
+  height: 40px;
+  width: 40px;
+}
 /*# sourceMappingURL=main.css.map */
