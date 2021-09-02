@@ -6,18 +6,19 @@
     let flag = 0;
     let listFavorites = getFavorites();
     if (listFavorites.length == 0){
-        listFavorites.push(articleId);
+        listFavorites.push([articleId,1]);
     }
     else{
         for (let oneFavorite of listFavorites){
-            if(oneFavorite == articleId){
+            if(oneFavorite[0] == articleId){
                 flag = 1;
+                oneFavorite[1]+=1;
             }
         }
         if(flag==0){
-            listFavorites.push(articleId); 
-        }
-    }  
+            listFavorites.push([articleId,1]);                
+        } 
+    }
     saveFavorites(listFavorites);
 }
 

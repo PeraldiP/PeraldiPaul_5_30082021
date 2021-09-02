@@ -26,9 +26,9 @@ fetch(urlPage)
                                                     <input class="one-product__add-cart" type="button" value="Ajout au Panier">
                                                 </div>`;
         
-                                                document.querySelector(".one-product__add-cart").addEventListener("click",function(){
-                                                        addFavorites(idProduct);
-                                                    })
+        document.querySelector(".one-product__add-cart").addEventListener("click",function(){
+            addFavorites(idProduct);
+        });
                                                                                         
     }); 
 
