@@ -2,21 +2,21 @@
  * Gestion des favoris, enregistrement d'un article en favoris, retrait d'un article des favoris et récupération de la liste des favoris
  */
 
- function addFavorites(articleId){
+ function addFavorites(productAdd){
     let flag = 0;
     let listFavorites = getFavorites();
     if (listFavorites.length == 0){
-        listFavorites.push([articleId,1]);
+        listFavorites.push([productAdd,1]);
     }
     else{
         for (let oneFavorite of listFavorites){
-            if(oneFavorite[0] == articleId){
+            if(oneFavorite[0].id == productAdd.id){
                 flag = 1;
                 oneFavorite[1]+=1;
             }
         }
         if(flag==0){
-            listFavorites.push([articleId,1]);                
+            listFavorites.push([productAdd,1]);                
         } 
     }
     saveFavorites(listFavorites);
