@@ -227,4 +227,14 @@ footer h2 {
   height: 40px;
   width: 40px;
 }
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulaire form {
+  display: flex;
+  flex-direction: column;
+}
 /*# sourceMappingURL=main.css.map */

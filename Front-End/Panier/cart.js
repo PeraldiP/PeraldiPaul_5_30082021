@@ -11,6 +11,13 @@ for (let productCart of listCartJSON){
                                                                     <img class="one-product__image" src="${article.imageUrl}"> 
                                                                     <p class="one-product__price">${article.getFormatedNumber()}€</p>
                                                                     <p class="quantity-product">Quantité : ${productCart[1]}</p>                                                     
-                                                                </div>`;                    
+                                                                </div>`;
+            document.querySelectorAll(".cross").forEach(cross => {
+                console.log(cross);
+                cross.addEventListener("click", function () {
+                    deleteFavorites(this.dataset.id);  
+                });
+            });
+                                                                                            
     });    
 }

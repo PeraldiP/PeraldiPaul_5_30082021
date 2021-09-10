@@ -32,6 +32,31 @@
                 <section id="price-total">
                     <div>Prix total : <span id="price"></span>€</div>
                 </section>
+                <section class="formulaire">
+                    <h2>Vos informations</h2>
+                    <form>
+                        <label for="validationFirstName">Prènom</label>
+                        <input type="text" required>
+                        <label for="validationName">Nom</label>
+                        <input type="text" required>
+                        <label for="validationRue">Rue</label>
+                        <input type="text" aria-describedby="validationRueFeedback" required>            
+                        <label for="validationVille">Ville</label>
+                        <input type="text" aria-describedby="validationVilleFeedback" required>
+                        <label for="validationCodePostal">Zip</label>
+                        <input type="text" aria-describedby="validationCodePostalFeedback">
+                        <label for="validatedInputEmail">Email</label>
+                        <span>@</span>
+                        <input type="text" aria-describedby="validatedInputEmail" required>
+                        <label for="validatedInputEmailConfirmation">Confirmer Votre Email</label>
+                        <span>@</span>
+                        <input type="text" aria-describedby="validatedInputEmailConfirmation" required>
+                        <input type="checkbox" value="" aria-describedby="invalidCheck3Feedback" required>
+                        <label for="invalidCheck3">J'accepte les conditions generales de vente</label>
+                        <div>Vous devez accepter les CGV.</div>
+                        <button type="submit">Confirmer ma commande</button>
+                    </form>
+                </section>
                 <section class="informations">
                     <div class="informations__choice">
                         <h3>Produits</h3>

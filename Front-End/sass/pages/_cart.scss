@@ -13,3 +13,12 @@
     }
     margin: 10px;
 }
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+}

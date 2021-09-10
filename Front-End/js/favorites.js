@@ -34,3 +34,9 @@ function getFavorites(){
 function saveFavorites(listFavorites){
     localStorage.setItem("listFavorites",JSON.stringify(listFavorites));
 }
+
+function deleteFavorites(articleId){
+    let listFavorites = getFavorites();
+    listFavorites.shift(favorites => favorites.id != articleId);
+    saveFavorites(listFavorites);
+}
