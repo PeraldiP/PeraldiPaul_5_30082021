@@ -113,7 +113,7 @@ footer h2 {
   align-items: center;
 }
 
-.products {
+.product {
   background-color: white;
   height: 325px;
   width: 50%;
@@ -127,17 +127,17 @@ footer h2 {
   text-decoration: none;
 }
 
-.products__title {
+.product__title {
   font-size: 2em;
   margin: 5px 0px;
 }
 
-.products__image {
+.product__image {
   height: 250px;
   width: 90%;
 }
 
-.products__price {
+.product__price {
   padding: 10px 0px;
 }
 
