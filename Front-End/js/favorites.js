@@ -37,6 +37,10 @@ function saveFavorites(listFavorites){
 
 function deleteFavorites(articleId){
     let listFavorites = getFavorites();
-    listFavorites.shift(favorites => favorites.id != articleId);
+    for(let i = 0; i < listFavorites.length; i++){
+        if(listFavorites[i][0].id===articleId){
+            listFavorites.splice(i,1);
+        }
+    }
     saveFavorites(listFavorites);
 }
