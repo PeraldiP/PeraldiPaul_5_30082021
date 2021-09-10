@@ -249,4 +249,15 @@ footer h2 {
 #price {
   font-weight: bold;
 }
+
+form {
+  width: 50%;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
 /*# sourceMappingURL=main.css.map */
