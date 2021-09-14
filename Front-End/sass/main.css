@@ -78,7 +78,7 @@ footer h2 {
 }
 
 #banniere {
-  background-image: url("../../Images/Banniere.jpg");
+  background-color: black;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -86,14 +86,16 @@ footer h2 {
 }
 
 #banniere div {
-  background-color: rgba(230, 150, 100, 0.1);
+  background-color: rgba(159, 147, 140, 0.996);
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 #banniere div h1 {
-  width: 300px;
+  width: 50%;
+  text-align: center;
 }
 
 #products {
@@ -214,7 +216,7 @@ footer h2 {
 
 .cart-product {
   display: flex;
-  flex-direction: rox;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 50px;

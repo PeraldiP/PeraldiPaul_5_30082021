@@ -1,16 +1,18 @@
 #banniere{
-    background-image: url("../../Images/Banniere.jpg");
+    background-color: black;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     div{
-        background-color: rgba(230,150,100,0.1);
+        background-color: rgba(159, 147, 140, 0.996);
         display: flex;
         justify-content: center;
         align-items: center;
+        color: white;
         h1{
-             width: 300px;
+             width: 50%;
+             text-align: center;
         }
     }
 }
