@@ -36,26 +36,38 @@
                 <section class="formulaire">
                     <h2>Vos informations</h2>
                     <form>
-                        <label for="validationFirstName">Prènom</label>
-                        <input type="text" required>
-                        <label for="validationName">Nom</label>
-                        <input type="text" required>
-                        <label for="validationRue">Rue</label>
-                        <input type="text" aria-describedby="validationRueFeedback" required>            
-                        <label for="validationVille">Ville</label>
-                        <input type="text" aria-describedby="validationVilleFeedback" required>
-                        <label for="validationCodePostal">Zip</label>
-                        <input type="text" aria-describedby="validationCodePostalFeedback">
-                        <label for="validatedInputEmail">Email</label>
-                        <span>@</span>
-                        <input type="text" aria-describedby="validatedInputEmail" required>
-                        <label for="validatedInputEmailConfirmation">Confirmer Votre Email</label>
-                        <span>@</span>
-                        <input type="text" aria-describedby="validatedInputEmailConfirmation" required>
-                        <input type="checkbox" value="" aria-describedby="invalidCheck3Feedback" required>
-                        <label for="invalidCheck3">J'accepte les conditions generales de vente</label>
-                        <div>Vous devez accepter les CGV.</div>
-                        <button type="submit">Confirmer ma commande</button>
+                        <div class = "name-and-lastname block">
+                            <div class = "name">
+                                <label for="name">Prènom :</label>
+                                <input type="text" placeholder="Prénom" id="name" name="user_name" required>
+                            </div>
+                            <div class = "lastname">
+                                <label for="lastname">Nom :</label>
+                                <input type="text" placeholder="Nom" id="lastname" name="user_lastname" required>
+                            </div>
+                        </div>
+                        <div class="postal-and-city block">
+                            <div class="adress">
+                                <label for="adress">Adresse :</label>
+                                <input type="text" placeholder="Adresse de livraison" id="adress" name="user_adress" required>
+                            </div>
+                            <div class="city">
+                                <label for="city">Ville :</label>
+                                <input type="text" placeholder="Ville" id="city" name="user_city" required>
+                            </div>
+                            <div class="zip">
+                                <label for="zip">Code Postal :</label>
+                                <input type="text" placeholder="Code postal" id="postal" name="user_postal" required>
+                            </div> 
+                        </div>
+                        <div class="mail block">
+                            <label for="email">Email :</label>
+                            <input type="email" placeholder="Adresse mail" id="mail" name="user_mail" required>
+                        </div>
+                        <div class="erreur"></div>
+                        <div class="submit">
+                            <button type="submit">Confirmer ma commande</button>
+                        </div>
                     </form>
                 </section>
                 <section class="informations">
