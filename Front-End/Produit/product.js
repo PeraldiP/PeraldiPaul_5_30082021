@@ -23,7 +23,7 @@ fetch(`http://localhost:3000/api/cameras/${idParam}`)
                                                                     <option value="">--Choississez la taille de la lentille--</option>
                                                                 </select>
                                                             </div>    
-                                                            <p class="one-product__price"><span>Prix :</span> ${article.getFormatedNumber()}</p>
+                                                            <p class="one-product__price"><span>Prix :</span> ${article.getFormatedNumber()} €</p>
                                                         </div>
                                                     </div>
                                                     <input class="one-product__add-cart" type="button" value="Ajout au Panier">

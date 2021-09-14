@@ -73,10 +73,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include desktop{
+        flex-direction: column;
+        height: 100%;
+    } 
     &__choice{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @include desktop{
+            margin: 10px;
+        } 
     }
 }
