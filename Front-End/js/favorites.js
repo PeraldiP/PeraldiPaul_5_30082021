@@ -2,6 +2,7 @@
  * Gestion des favoris, enregistrement d'un article en favoris, retrait d'un article des favoris et récupération de la liste des favoris
  */
 
+// Ajout d'un produit à la localStorage
  function addFavorites(productAdd){
     let flag = 0;
     let listFavorites = getFavorites();
@@ -22,6 +23,7 @@
     saveFavorites(listFavorites);
 }
 
+// Initialisation ou recupéreration des données de la localStorage
 function getFavorites(){
     let listFavorites = localStorage.getItem("listFavorites");
     if(listFavorites == null){
@@ -31,10 +33,12 @@ function getFavorites(){
     }
 }
 
+// Sauvegarde du produit dans la localStorage
 function saveFavorites(listFavorites){
     localStorage.setItem("listFavorites",JSON.stringify(listFavorites));
 }
 
+// Suppression d'un produit de la localStorage
 function deleteFavorites(articleId){
     let listFavorites = getFavorites();
     for(let i = 0; i < listFavorites.length; i++){
